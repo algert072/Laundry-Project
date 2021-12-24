@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+body {
+  font-family: 'Muli', sans-serif!important;
+  background: #f0f0f0;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn {
+  padding: 10px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.text1 {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Header Image */
+.container1 {
+  position: relative;
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container1 .img {
+  background: url('./images/Untitled\ design\ \(9\).png') no-repeat center
+    center/cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-attachment: fixed;
+}
+
+.container1 .overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+.container1 .text {
+  z-index: 2;
+  color: #fff;
+  font-size: 80px;
+}
+
+.container1 h5:hover {
+  cursor: pointer;
+  color: #0d6efd;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Header */
+.hero {
+  background: url('./images/Folded\ Blankets.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero * {
+  z-index: 10;
+}
+
+#none {
+  text-decoration: none;
+}
+
+/* About Us */
+#about {
+  margin: 50px 0;
+}
+
+#origin {
+  margin: 50px o;
+}
+
+/* Services Page */
+.service {
+  background: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+.service.active {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-title {
+  margin: 0 35px 0 0;
+}
+
+.service-text {
+  display: none;
+  margin: 30px 0 0;
+}
+
+.service.active .service-text {
+  display: block;
+}
+
+.service-toggle {
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  transition: all 1s ease-in-out;
+}
+
+.service-toggle .fa-times {
+  display: none;
+}
+
+.service.active .service-toggle .fa-times {
+  display: block;
+}
+
+.service.active .service-toggle .fa-chevron-down {
+  display: none;
+}
+
+.service.active .service-toggle {
+  background-color: #9fa4a8;
+}
+
+.resize {
+  height: 500px;
+  width: 400px;
+}
+
+/* Login Page */
+.noAccount p:hover {
+  cursor: pointer;
+  color: #0275d8;
+}
+
+/* Forgot Password */
+.containerF {
+  max-width: 900px;
+  margin: 108px auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+
+/* Dashboard */
+.containerD {
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.marginD {
+  margin-left: 10px;
+}
+
+/* Edit Dashboard */
+.customS {
+  margin-bottom: -30px!important;
+}
+
+.radius {
+  border-radius: 20px!important;
+}
+
+.containerED {
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+/* Preferences */
+.containerP {
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.containerP a {
+  text-decoration: none;
+}
+
+.btnCustom {
+  width: 250px;
+}
+
+/* Edit Preferences */
+.btnPref {
+  width: 80%;
+  border-radius: 50px!important;
+}
+
+.btnPref1 {
+  width: 110%;
+  border-radius: 50px!important;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+.textA {
+  width: 70%!important;
+  margin: 0 auto;
+  border-radius: 15px!important;
+  border: 1px solid #4f4e72!important;
+  background-color: #f0f0f0!important;
+}
+
+@media (max-width: 600px) {
+  .btnPref1 {
+    width: 100%;
+    border-radius: 50px!important;
+    margin-top: -5px;
+    margin-bottom: 15px;
+  }
+
+  .textA {
+    width: 100%!important;
+    margin: 0 auto;
+    border-radius: 15px!important;
+    border: 1px solid #4f4e72!important;
+    background-color: #f0f0f0!important;
+  }
+
+  .btnPref {
+    width: 100%;
+    border-radius: 50px!important;
+  }
+}
+
+.activeP {
+  background-color: #727576;
+  color: #fff;
+}
+
+.rowPref {
+  margin-bottom: 1px;
+}
+
+
+.btnEP {
+  border-radius: 25px;
+}
+
+/* Billing */
+.containerDB {
+  max-width: 900px;
+  margin: 142px auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.containerDB2 {
+  max-width: 900px;
+  margin: 83px auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+/* Privacy */
+.containerPR {
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+/* Form */
+.maxWidth {
+  max-width: 900px;
+}
+
+.maxWidth1 {
+  max-width: 500px;
+}
+
+.card-body {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  opacity: border 0.3;
+  padding: 50px;
+}
+
+small {
+  font-size: 12px;
+}
+
+/* Alert */
+.max {
+  max-width: 1000px;
+}
+.alert1 {
+  padding: 0.7rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.alert1-danger {
+  background: #dc3545;
+  color: #fff;
+}
+
+/* Footer */
+.box a i {
+  font-size: 40px;
+}
+
+.box a {
+  margin: 5px 0;
+}
+.footer {
+  background-color: #333;
+  bottom: 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a h4 {
+  transform: translateY(-4px);
+}
+
+.footer a:hover {
+  color: #0d6efd;
+}
+
+.footer h4:hover {
+  color: #0d6efd;
+  cursor: pointer;
+}
+
+.lines1 {
+  line-height: 10px;
+}
+
+.lines2 {
+  line-height: 15px;
+}
+
+.lines div {
+  border-bottom: #fff dashed 1px;
+  list-style: none;
+}
+
+.lines p::before {
+  content: '\2022';
+  color: gray;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media (min-width: 768px) {
+  .navbar a:hover {
+    border-bottom: #0d6efd 2px solid;
+  }
+
+  #none:hover {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .hide-sm {
+    display: none;
+  }
+}
